@@ -161,9 +161,18 @@ const Home = () => {
               Find your way around the station with our advanced AR navigation, 
               real-time crowd management, and multilingual support.
             </p>
-            <Button variant="hero" size="lg" onClick={() => navigate("/ar-navigation")}>
-              Start Navigation Experience
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <Button variant="hero" size="lg" onClick={() => navigate("/ar-navigation")}>
+                Start Navigation Experience
+              </Button>
+              <Button 
+                variant="navigation" 
+                size="lg" 
+                onClick={() => window.open('/ar.html', '_blank')}
+              >
+                AR Navigation
+              </Button>
+            </div>
           </CardContent>
         </Card>
       </div>
